@@ -14,3 +14,7 @@
     ~~~bash
         pip install -r requirements.txt
     ~~~
+2. criar um arquivo com o nome `secret_keys.py` e, dentro dele, inserir a variável `TOKEN` com a string do token. Exemplo: 
+    ~~~python
+        TOKEN = 'codigo token'
+    ~~~
