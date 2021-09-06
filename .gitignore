@@ -2,4 +2,4 @@
 src/secret_keys.py
 
 ####### TRASH
-src/__pycache__
+src/__pycache__/
