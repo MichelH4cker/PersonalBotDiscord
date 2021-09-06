@@ -16,5 +16,9 @@ async def ola(ctx):
 async def tchau(ctx):
     await ctx.send(f'VAZA, {ctx.author}')
 
-client.run('ODgzNTA1NDM0NTcxNDY4ODEx.YTK6jg.bGiSAPLaIe6NUX5Ln25PKhy_z_U')
 
+####### RODANDO LOCALMENTE
+from secret_keys import TOKEN   # IMPORTA O TOKEN DO BOT NO ARQUIVO SECRET_KEYS.PY
+secret_token = TOKEN            # VARIÁVEL RECEBE O TOKEN SECRETO
+
+client.run(secret_token)
