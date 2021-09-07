@@ -1,1 +1,1 @@
-personal-bot-discord: python "main.py"
+personal-bot-discord: python "src/main.py"
