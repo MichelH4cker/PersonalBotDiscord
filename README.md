@@ -20,3 +20,4 @@
     ~~~
     depois disso, executar o arquivo `main.py` normalmente
 * o deploy automático só funciona na branch `main`. Para deploy de outras branchs, é necessário entrar no site do Heroku (após pull request) e realizar o deploy manualmente.
+* para confirar o deploy no Herolu basta configurar o método de deploy, localizado na aba 'Deploy'. Depois, deve-se inserir as `Config Vars`, localizadas na aba 'Settings'. O nome da `Key` deve ser igual ao da variável no código.
