@@ -1,24 +1,28 @@
 import discord 
 from discord.ext import commands
 
-client = commands.Bot(command_prefix = ">", case_insensitive = True)
+from dotenv import load_dotenv
+import os
 
-@client.event
+load_dotenv()
+
+bot = commands.Bot(command_prefix = ">", case_insensitive = True)
+
+@bot.event
 async def on_ready():
-    print('Entramos como {0.user}' .format(client))
+    print('Entramos como {0.user}' .format(bot))
 
 
-@client.command()
+@bot.command()
 async def ola(ctx):
     await ctx.send(f'hello, {ctx.author}')
 
-@client.command()
+@bot.command()
 async def tchau(ctx):
     await ctx.send(f'VAZA, {ctx.author}')
 
 
-####### RODANDO LOCALMENTE
-from secret_keys import TOKEN   # IMPORTA O TOKEN DO BOT NO ARQUIVO SECRET_KEYS.PY
-secret_token = TOKEN            # VARIÁVEL RECEBE O TOKEN SECRETO
 
-client.run(secret_token)
+####### RUN
+DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
+bot.run(DISCORD_TOKEN)
