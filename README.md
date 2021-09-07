@@ -6,15 +6,17 @@
 
 - [Python3](https://www.python.org/)
 - [Discord developer](https://discord.com/developers/applications)
-
+- [Heroku](https://dashboard.heroku.com/apps)
 
 ## Steps to run and debug
 
-1. instalar os pacotes do python
+* instalar os pacotes do python
     ~~~bash
         pip install -r requirements.txt
     ~~~
-2. criar um arquivo com o nome `secret_keys.py` e, dentro dele, inserir a variável `TOKEN` com a string do token. Exemplo: 
+* (PARA RODAR LOCALMENTE) criar um arquivo com o nome `secret_keys.py` e, dentro dele, inserir a variável `TOKEN` com a string do token. Exemplo: 
     ~~~python
         TOKEN = 'codigo token'
     ~~~
+    depois disso, executar o arquivo `main.py` normalmente
+* o deploy automático só funciona na branch `main`. Para deploy de outras branchs, é necessário entrar no site do Heroku (após pull request) e realizar o deploy manualmente.
