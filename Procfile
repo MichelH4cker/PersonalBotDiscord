@@ -1,0 +1,1 @@
+personal-bot-discord: python "main.py"
