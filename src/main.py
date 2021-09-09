@@ -1,4 +1,7 @@
 import discord 
+from discord import colour
+from discord import client
+from discord import embeds 
 from discord.ext import commands
 
 from dotenv import load_dotenv
