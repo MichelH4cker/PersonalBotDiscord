@@ -1,4 +1,7 @@
 import discord 
+from discord import colour
+from discord import client
+from discord import embeds 
 from discord.ext import commands
 
 from dotenv import load_dotenv
@@ -21,6 +24,14 @@ async def ola(ctx):
 async def tchau(ctx):
     await ctx.send(f'VAZA, {ctx.author}')
 
+@bot.command()
+async def enviaembed(ctx):
+    embed = discord.Embed(
+        title = 'Titulo',
+        description = 'Descricao',
+        colour = 5420608
+    )
+    await ctx.send(embed = embed)
 
 
 ####### RUN
