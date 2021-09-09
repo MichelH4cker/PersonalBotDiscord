@@ -33,6 +33,7 @@ async def enviaembed(ctx):
     )
     await ctx.send(embed = embed)
 
+
 ####### RUN
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
 bot.run(DISCORD_TOKEN)

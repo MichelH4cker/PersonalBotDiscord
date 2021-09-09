@@ -1,1 +1,7 @@
+####### PRIVATE STUFFS
 src/secret_keys.py
+
+####### TRASH
+*__pycache__/*
+__pycache__/*
+__pycache__/
